@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Agile Automation" verbose="1" parallel="none" thread-count="1" configfailurepolicy="continue">
+
+<!--    <test name="Login with Chrome" annotations="JDK" preserve-order="true">
+        <parameter name="browserName" value="chrome"/>
+
+        <classes>
+            <class name="Driver.TestCaseDriver"/>
+        </classes>
+    </test>-->
+
+
+  <test name="Login with IE" annotations="JDK" preserve-order="true">
+        <parameter name="browserName" value="${browserName}"/>
+
+        <classes>
+            <class name="Driver.FeatureDriver"/>
+        </classes>
+    </test>
+
+
+</suite>
